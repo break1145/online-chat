@@ -22,8 +22,7 @@
 
 
     <properties>
-        <maven.compiler.source>22</maven.compiler.source>
-        <maven.compiler.target>22</maven.compiler.target>
+        <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <skipTests>true</skipTests>
@@ -39,7 +38,7 @@
         <logstash-logback.version>7.2</logstash-logback.version>
         <minio.version>8.4.5</minio.version>
         <jaxb-api.version>2.3.1</jaxb-api.version>
-        <lombok.version>1.18.10</lombok.version>
+        <lombok.version>1.18.34</lombok.version>
         <netty-all.version>4.1.76.Final</netty-all.version>
         <weixin-java-mp.version>4.4.0</weixin-java-mp.version>
         <mybatis-plus-boot-starter.version>3.4.0</mybatis-plus-boot-starter.version>
