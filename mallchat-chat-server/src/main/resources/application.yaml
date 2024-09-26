@@ -1,21 +1,45 @@
+#spring:
+#  profiles:
+#    #运行的环境
+#    active: test
+#  application:
+#    name: mallchat
+#  datasource:
+#    url: jdbc:mysql://${mallchat.mysql.ip}:${mallchat.mysql.port}/${mallchat.mysql.db}?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+#    username: ${mallchat.mysql.username}
+#    password: ${mallchat.mysql.password}
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jackson:
+#    serialization:
+#      write-dates-as-timestamps: true
+#  data:
+#    redis:
+#      host: ${mallchat.redis.host}
+#      port: ${mallchat.redis.port}
+#      database: 1
+#      timeout: 1800000
+##      password: ${mallchat.redis.password}
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
 spring:
-  profiles:
-    #运行的环境
-    active: test
   application:
     name: mallchat
   datasource:
-    url: jdbc:mysql://${mallchat.mysql.ip}:${mallchat.mysql.port}/${mallchat.mysql.db}?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-    username: ${mallchat.mysql.username}
-    password: ${mallchat.mysql.password}
+    url: jdbc:mysql://127.0.0.1:3307/mallchat?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 12345678
     driver-class-name: com.mysql.cj.jdbc.Driver
   jackson:
     serialization:
       write-dates-as-timestamps: true
   data:
     redis:
-      host: ${mallchat.redis.host}
-      port: ${mallchat.redis.port}
+      host: 127.0.0.1
+      port: 6379
       database: 1
       timeout: 1800000
 #      password: ${mallchat.redis.password}
