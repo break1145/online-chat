@@ -26,6 +26,7 @@ mybatis-plus:
     map-underscore-to-camel-case: true
 
 spring:
+
   application:
     name: mallchat
   datasource:
